@@ -46,53 +46,54 @@ def roll_dice(for_player):
 def setup_players():
     global players, auto_play
     print("\n🎲 Welcome to Kingsburg Console Edition!")
-    user_input = input(
-        "Press Enter to begin, type 'auto play' for a bot match, or type like '1 bot, 1 human' to add players: "
-    ).strip().lower()
-
-    if user_input == "auto play":
-        print("Starting a 2-bot auto play game.")
-        auto_play = True
-        for i in range(2):
+    print("\nSelect a game mode:")
+    print("1. Computer vs Computer")
+    print("2. Human vs Computer")
+    print("3. Human vs Human")
+    
+    while True:
+        user_input = input("\nEnter your choice (1, 2, or 3): ").strip()
+        
+        if user_input == "1":
+            # Computer vs Computer
+            print("Starting a Computer vs Computer game.")
+            auto_play = True
+            for i in range(2):
+                p = get_new_player_state()
+                p["type"] = "bot"
+                p["name"] = f"Bot {i+1}"
+                players.append(p)
+            return
+        
+        elif user_input == "2":
+            # Human vs Computer
+            print("Starting a Human vs Computer game.")
+            auto_play = False
+            # Add human player
+            p = get_new_player_state()
+            p["type"] = "human"
+            p["name"] = "Player 1"
+            players.append(p)
+            # Add bot player
             p = get_new_player_state()
             p["type"] = "bot"
-            p["name"] = f"Bot {i+1}"
+            p["name"] = "Bot 1"
             players.append(p)
-        return
-
-    if not user_input:
-        print("Starting with 1 human player.")
-        p = get_new_player_state()
-        p["name"] = "Player 1"
-        players.append(p)
-        return
-
-    # Parse input
-    tokens = user_input.replace(",", "").split()
-    i = 0
-    while i < len(tokens):
-        try:
-            count = int(tokens[i])
-            role = tokens[i + 1]
-            if role in ["bot", "human"]:
-                for n in range(count):
-                    p = get_new_player_state()
-                    p["type"] = role
-                    p["name"] = f"{role.capitalize()} {len(players)+1}"
-                    players.append(p)
-                i += 2
-            else:
-                print(f"Unknown role '{role}'. Ignoring.")
-                i += 1
-        except (IndexError, ValueError):
-            print("Couldn't understand part of the input. Ignoring.")
-            break
-
-    if not players:
-        print("No valid players found. Defaulting to 1 human player.")
-        p = get_new_player_state()
-        p["name"] = "Player 1"
-        players.append(p)
+            return
+        
+        elif user_input == "3":
+            # Human vs Human
+            print("Starting a Human vs Human game.")
+            auto_play = False
+            for i in range(2):
+                p = get_new_player_state()
+                p["type"] = "human"
+                p["name"] = f"Player {i+1}"
+                players.append(p)
+            return
+        
+        else:
+            print("❌ Invalid choice. Please enter 1, 2, or 3.")
 
 
 def get_possible_sums(dice):
