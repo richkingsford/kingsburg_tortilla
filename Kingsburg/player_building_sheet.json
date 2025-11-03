@@ -1,0 +1,372 @@
+{
+  "buildings": [
+    {
+      "name": "Statue",
+      "cost": {
+        "wood": 2,
+        "stone": 0,
+        "gold": 0
+      },
+      "benefit": "+3 victory points",
+      "level": "1.1",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Chapel",
+      "cost": {
+        "wood": 3,
+        "stone": 1,
+        "gold": 0
+      },
+      "benefit": "+5 victory points, +1 defense vs. Demons",
+      "level": "1.2",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 5
+        },
+        {
+          "type": "gain",
+          "resource": "demon_defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Church",
+      "cost": {
+        "wood": 3,
+        "stone": 1,
+        "gold": 2
+      },
+      "benefit": "+7 victory points, +1 defense vs. Demons",
+      "level": "1.3",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 7
+        },
+        {
+          "type": "gain",
+          "resource": "demon_defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Cathedral",
+      "cost": {
+        "wood": 5,
+        "stone": 3,
+        "gold": 0
+      },
+      "benefit": "+9 victory points (end of game)",
+      "level": "1.4",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 9
+        }
+      ]
+    },
+    {
+      "name": "Inn",
+      "cost": {
+        "wood": 1,
+        "stone": 1,
+        "gold": 0
+      },
+      "benefit": "+1 resource in Summer",
+      "level": "2.1",
+      "effects": [
+        {
+          "type": "season_bonus",
+          "season": "Summer",
+          "resource": "any",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Market",
+      "cost": {
+        "wood": 2,
+        "stone": 2,
+        "gold": 0
+      },
+      "benefit": "+1 influence per season",
+      "level": "2.2",
+      "effects": [
+        {
+          "type": "influence_bonus",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Farms",
+      "cost": {
+        "wood": 2,
+        "stone": 3,
+        "gold": 1
+      },
+      "benefit": "+2 resources",
+      "level": "2.3",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "any",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Merchant's Guild",
+      "cost": {
+        "wood": 3,
+        "stone": 3,
+        "gold": 2
+      },
+      "benefit": "+4 gold (start of productive season)",
+      "level": "2.4",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "gold",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Guard Tower",
+      "cost": {
+        "wood": 1,
+        "stone": 1,
+        "gold": 0
+      },
+      "benefit": "+1 defense",
+      "level": "3.1",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Blacksmith",
+      "cost": {
+        "wood": 1,
+        "stone": 2,
+        "gold": 0
+      },
+      "benefit": "+2 defense",
+      "level": "3.2",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Barracks",
+      "cost": {
+        "wood": 2,
+        "stone": 1,
+        "gold": 0
+      },
+      "benefit": "+4 defense",
+      "level": "3.3",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Wizards' Guild",
+      "cost": {
+        "wood": 3,
+        "stone": 2,
+        "gold": 2
+      },
+      "benefit": "+6 defense",
+      "level": "3.4",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 6
+        }
+      ]
+    },
+    {
+      "name": "Palisade",
+      "cost": {
+        "wood": 2,
+        "stone": 0,
+        "gold": 0
+      },
+      "benefit": "+1 defense vs. Zombies",
+      "level": "4.1",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "zombie_defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Stable",
+      "cost": {
+        "wood": 1,
+        "stone": 1,
+        "gold": 2
+      },
+      "benefit": "+1 defense, +1 advisor",
+      "level": "4.2",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 1
+        },
+        {
+          "type": "extra_advisor",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Stone Wall",
+      "cost": {
+        "wood": 2,
+        "stone": 2,
+        "gold": 0
+      },
+      "benefit": "+2 defense, win ties",
+      "level": "4.3",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 2
+        },
+        {
+          "type": "tie_breaker"
+        }
+      ]
+    },
+    {
+      "name": "Fortress",
+      "cost": {
+        "wood": 3,
+        "stone": 3,
+        "gold": 2
+      },
+      "benefit": "+4 defense, +1 victory point per win",
+      "level": "4.4",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 4
+        },
+        {
+          "type": "bonus_vp_per_win",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Barricade",
+      "cost": {
+        "wood": 1,
+        "stone": 0,
+        "gold": 0
+      },
+      "benefit": "+1 defense vs. Goblins",
+      "level": "5.1",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "defense",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Crane",
+      "cost": {
+        "wood": 1,
+        "stone": 1,
+        "gold": 0
+      },
+      "benefit": "Build levels III or IV",
+      "level": "5.2",
+      "effects": [
+        {
+          "type": "unlock_rows",
+          "rows": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Town Hall",
+      "cost": {
+        "wood": 2,
+        "stone": 1,
+        "gold": 2
+      },
+      "benefit": "+2 victory points (end of productive season)",
+      "level": "5.3",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Embassy",
+      "cost": {
+        "wood": 2,
+        "stone": 2,
+        "gold": 4
+      },
+      "benefit": "+4 victory points (productive season)",
+      "level": "5.4",
+      "effects": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 4
+        }
+      ]
+    }
+  ]
+}

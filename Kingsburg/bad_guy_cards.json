@@ -1,0 +1,177 @@
+[
+  {
+    "level": 1,
+    "strength": 2,
+    "name": "Barbarians",
+    "loss": "-1 good, -1 building",
+    "reward": "+1 gold"
+  },
+  {
+    "level": 1,
+    "strength": 2,
+    "name": "Goblins",
+    "loss": "-1 wood, -1stone, -1 VP, -1 building",
+    "reward": "+1 wood"
+  },
+  {
+    "level": 1,
+    "strength": 3,
+    "name": "Goblins",
+    "loss": "-1 gold, -1 building",
+    "reward": "+1 stone"
+  },
+  {
+    "level": 1,
+    "strength": 3,
+    "name": "Orcs",
+    "loss": "-2 resources, -1 VP",
+    "reward": "+1 gold"
+  },
+  {
+    "level": 1,
+    "strength": 4,
+    "name": "Zombies",
+    "loss": "-2 vp",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 2,
+    "strength": 3,
+    "name": "Goblins",
+    "loss": "-2 wood, -2 stone, -1 VP, -1 building",
+    "reward": "+1 wood"
+  },
+  {
+    "level": 2,
+    "strength": 4,
+    "name": "Goblins",
+    "loss": "-2 gold, -1 building",
+    "reward": "+1 stone"
+  },
+  {
+    "level": 2,
+    "strength": 4,
+    "name": "Orcs",
+    "loss": "-2 resources, -1 building",
+    "reward": "+1 gold"
+  },
+  {
+    "level": 2,
+    "strength": 5,
+    "name": "Barbarians",
+    "loss": "-2 resources, -1 VP",
+    "reward": "+1 gold"
+  },
+  {
+    "level": 2,
+    "strength": 5,
+    "name": "Zombies",
+    "loss": "-2 VP",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 3,
+    "strength": 4,
+    "name": "Goblins",
+    "loss": "-3 wood, -3 stone, -1 VP, -1 building",
+    "reward": "+1 wood"
+  },
+  {
+    "level": 3,
+    "strength": 5,
+    "name": "Goblins",
+    "loss": "-3 gold, -1 building",
+    "reward": "+1 stone"
+  },
+  {
+    "level": 3,
+    "strength": 5,
+    "name": "Orcs",
+    "loss": "-2 resources, -1 building",
+    "reward": "+1 gold"
+  },
+  {
+    "level": 3,
+    "strength": 6,
+    "name": "Zombies",
+    "loss": "-2 VP",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 3,
+    "strength": 6,
+    "name": "Demons",
+    "loss": "-2 gold, -1 wood, -1 stone, -1 VP",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 4,
+    "strength": 5,
+    "name": "Goblins",
+    "loss": "-4 wood, -4 stone, -1 VP, -1 building",
+    "reward": "+1 wood"
+  },
+  {
+    "level": 4,
+    "strength": 6,
+    "name": "Goblins",
+    "loss": "-4 gold, -1 building",
+    "reward": "+1 stone"
+  },
+  {
+    "level": 4,
+    "strength": 6,
+    "name": "Demons",
+    "loss": "-4 resources, -1 VP",
+    "reward": "+1 gold, +1 VP"
+  },
+  {
+    "level": 4,
+    "strength": 7,
+    "name": "Orcs",
+    "loss": "-2 resources, -1 building",
+    "reward": "+1 resource"
+  },
+  {
+    "level": 4,
+    "strength": 7,
+    "name": "Zombies",
+    "loss": "-2 VP",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 5,
+    "strength": 7,
+    "name": "Barbarians",
+    "loss": "-8 VP",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 5,
+    "strength": 8,
+    "name": "Barbarians",
+    "loss": "-1 building",
+    "reward": "+1 VP"
+  },
+  {
+    "level": 5,
+    "strength": 8,
+    "name": "Demons",
+    "loss": "-1 building, -2 VP",
+    "reward": "+2 VP"
+  },
+  {
+    "level": 5,
+    "strength": 9,
+    "name": "Demons",
+    "loss": "-1 building",
+    "reward": "+2 VP"
+  },
+  {
+    "level": 5,
+    "strength": 9,
+    "name": "Dragons",
+    "loss": "-5 VP",
+    "reward": "+3 VP"
+  }
+]

@@ -1,0 +1,298 @@
+{
+  "characters": [
+    {
+      "name": "Jester",
+      "value": 1,
+      "benefit": "Gain 1 VP (advance your token one space on the Scoring Track).",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Squire",
+      "value": 2,
+      "benefit": "Take 1 gold from the supply.",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "gold",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Architect",
+      "value": 3,
+      "benefit": "Take 1 wood from the supply.",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "wood",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Merchant",
+      "value": 4,
+      "benefit": "Take 1 wood OR 1 gold from the supply.",
+      "actions": [
+        {
+          "type": "choose",
+          "resource": [
+            "wood",
+            "gold"
+          ],
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Sergeant",
+      "value": 5,
+      "benefit": "Recruit 1 soldier (advance your token one space on the Soldiers Chart).",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "armies",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Alchemist",
+      "value": 6,
+      "benefit": "You can trade 1 single good of your choice (put it back into the supply) for the other 2 goods, i.e., give back 1 stone to take 1 gold and 1 wood.",
+      "actions": [
+        {
+          "type": "trade",
+          "give": 1,
+          "get": [
+            "gold",
+            "wood",
+            "stone"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Astronomer",
+      "value": 7,
+      "benefit": "Take 1 good of your choice AND 1 \u201c+2\u201d token from the supply.",
+      "actions": [
+        {
+          "type": "choose",
+          "resource": "any",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "plus2",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Treasurer",
+      "value": 8,
+      "benefit": "Take 2 gold from the supply.",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "gold",
+          "amount": 2
+        }
+      ]
+    },
+    {
+      "name": "Master Hunter",
+      "value": 9,
+      "benefit": "Take 1 wood and 1 gold OR 1 wood and 1 stone from the supply.",
+      "actions": [
+        {
+          "type": "choose",
+          "resource": [
+            [
+              "wood",
+              "gold"
+            ],
+            [
+              "wood",
+              "stone"
+            ]
+          ],
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "General",
+      "value": 10,
+      "benefit": "Recruit 2 soldiers (advance your token two spaces on the Soldiers Chart) and secretly look at the topmost card in the Enemies Deck (then put it back on top of the deck facedown).",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "armies",
+          "amount": 2
+        },
+        {
+          "type": "peek",
+          "deck": "enemies"
+        }
+      ]
+    },
+    {
+      "name": "Swordsmith",
+      "value": 11,
+      "benefit": "Take 1 stone and 1 wood OR 1 stone and 1 gold from the supply.",
+      "actions": [
+        {
+          "type": "choose",
+          "resource": [
+            [
+              "stone",
+              "wood"
+            ],
+            [
+              "stone",
+              "gold"
+            ]
+          ],
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Duchess",
+      "value": 12,
+      "benefit": "Take 2 goods of your choice AND 1 \u201c+2\u201d token from the supply.",
+      "actions": [
+        {
+          "type": "choose",
+          "resource": "any",
+          "amount": 2
+        },
+        {
+          "type": "gain",
+          "resource": "plus2",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Champion",
+      "value": 13,
+      "benefit": "Take 3 stone from the supply.",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "stone",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Smuggler",
+      "value": 14,
+      "benefit": "Pay 1 VP (adjust the Scoring Track by moving your token back one space) to take 3 goods of your choice from the supply.",
+      "actions": [
+        {
+          "type": "lose",
+          "resource": "vp",
+          "amount": 1
+        },
+        {
+          "type": "choose",
+          "resource": "any",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "Inventor",
+      "value": 15,
+      "benefit": "Take 1 gold, 1 wood, and 1 stone from the supply.",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "gold",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "wood",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "stone",
+          "amount": 1
+        }
+      ]
+    },
+    {
+      "name": "Wizard",
+      "value": 16,
+      "benefit": "Take 4 gold from the supply.",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "gold",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Queen",
+      "value": 17,
+      "benefit": "Take 2 goods of your choice from the supply AND secretly look at the topmost card in the Enemies Deck (then put it back on top of the deck facedown) AND gain 3 VP (advance your token three spaces on the Scoring Track).",
+      "actions": [
+        {
+          "type": "choose",
+          "resource": "any",
+          "amount": 2
+        },
+        {
+          "type": "peek",
+          "deck": "enemies"
+        },
+        {
+          "type": "gain",
+          "resource": "vp",
+          "amount": 3
+        }
+      ]
+    },
+    {
+      "name": "King",
+      "value": 18,
+      "benefit": "Take 1 gold, 1 wood, and 1 stone from the supply AND Recruit 1 soldier (advance your token one space on the Soldiers Chart).",
+      "actions": [
+        {
+          "type": "gain",
+          "resource": "gold",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "wood",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "stone",
+          "amount": 1
+        },
+        {
+          "type": "gain",
+          "resource": "armies",
+          "amount": 1
+        }
+      ]
+    }
+  ]
+}

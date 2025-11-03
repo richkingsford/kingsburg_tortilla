@@ -1,0 +1,4 @@
+NEW GAME for Bot 1 -- 5W/3S/3G, 0 VP, 0 armies.
+
+== SPRING ==
+Bot 1 rolled [3, 3, 6]
